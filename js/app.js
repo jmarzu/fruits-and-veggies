@@ -2,10 +2,11 @@
 
 // debug stuff to show the app is loading and fruit / veggies are available
 
-var myApp = angular.module('myApp', []);
   console.log('App Started');
   console.log('Fruit count', fruits.length);
   console.log('Veggie count', vegetables.length);
+
+var myApp = angular.module('myApp', []);
 
 myApp.controller('myCtrl', ['$scope', function($scope) {
   $scope.fruits = [];
@@ -15,7 +16,7 @@ myApp.controller('myCtrl', ['$scope', function($scope) {
   $scope.moveLeft = function(idx) {
     $scope.fruits.push($scope.foodArray[idx]);
     $scope.foodArray.splice(idx, 1);
-  };
+  }
 
   $scope.moveRight = function(idx) {
     $scope.veggies.push($scope.foodArray[idx]);

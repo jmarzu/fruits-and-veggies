@@ -16,14 +16,14 @@
             <div class="row">
                 <div class="col-sm-4">
                   <h3>Fruits</h3>
-                  <div ng-repeat="fruit in fruits track by $index">
+                  <div class="well" ng-repeat="fruit in fruits track by $index">
                     {{ fruit }}
                     <button ng-click="moveBackRight($index)">--></button>
                   </div>
                 </div>
                 <div class="col-sm-4">
                     <h3>Pool</h3>
-                      <div np-repeat="food in foodArray track by $index">
+                      <div class="well" ng-repeat="food in foodArray track by $index">
                         <button ng-click="moveLeft($index)"><--</button>
                         {{ food }}
                         <button ng-click="moveRight($index)">--></button>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>Veggies</h3>
-                      <div ng-repeat="veggie in veggies track by $index">
+                      <div class="well" ng-repeat="veggie in veggies track by $index">
                         <button ng-click="moveBackLeft($index)"><--</button>
                         {{ veggie }}
                       </div>
